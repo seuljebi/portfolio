@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>
+            Home - DRHB
+        </title>
+        <link rel="icon" type="image/x-icon" href="./fpimgs/fpicon.png">
+    </head>
+    <body>
+
+                  <!-- BACKGROUND MUSIC -->
+                  <audio autoplay loop>
+                    <source src="./fpimgs/zeddxvalo.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                  </audio>
+      
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="career.html">CAREER</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <hr size="1" width="100%" color="#d9d9d9">  
+          </div>
+
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script> 
+
+            <video autoplay muted loop id="myVideo">
+              <source src="./fpimgs/homevid.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <script>
+              var video = document.getElementById("myVideo");
+            </script>
+
+            <div class="container">
+              <div class="homesec">
+                <img class="homeimg" src="./fpimgs/home_img1.jpg">
+                  <div class="homeinfo1">
+                    <h1>DENISSE ROXANNE<br>H. BOLINAS</h1>
+                  </div>
+                  <div class="homeinfo2">
+                    <p>A first-year Bachelor of Science in Electronics Engineering Student at the Technological University of the Philippines.</p>
+                  </div>
+                    <button class="homeviewbtn"><a href="Resume_Bolinas_DR.pdf" target="_blank">VIEW RESUME</a></button>
+              </div>
+            </div>
+            
+          <div class="homenavcont">
+            <div class="hnrow">
+              <div class="card2-1">
+                <a href="about.html"><img src="./fpimgs/hp1.png" alt=""></a>
+                <h1>ABOUT</h1>
+              </div>
+
+              <div class="card2-1">
+                <a href="education.html"><img src="./fpimgs/hp2.png" alt=""></a>
+                <h1>EDUCATION</h1>
+              </div>
+
+              <div class="card2-1">
+                <a href="career.html"><img src="./fpimgs/hp3.png" alt=""></a>
+                <h1>CAREER</h1>
+              </div>
+
+              <div class="card2-1">
+                <a href="gallery.html"><img src="./fpimgs/hp4.png" alt=""></a>
+                <h1>GALLERY</h1>
+              </div>
+
+              <div class="card2-1">
+                <a href="contact.html"><img src="./fpimgs/hp5.png" alt=""></a>
+                <h1>CONTACT</h1>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="mfooter"><br><br>
+            <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9">
+            <p>All Rights Reserved © 2022</p>
+          </div>
+    </body>
+
+</html>

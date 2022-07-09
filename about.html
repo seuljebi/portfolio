@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" type="text/css" href="about_style.css">
+        <title>
+            About - DRHB
+        </title>
+        <link rel="icon" type="image/x-icon" href="./fpimgs/fpicon.png">
+    </head>
+    <body>
+      
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="career.html">CAREER</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <hr size="1" width="100%" color="#d9d9d9">  
+          </div>
+
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script> 
+
+            
+
+            <div class="aboutcontainer">
+                <div class="aboutsec1">
+                <img id="myImg" src="./fpimgs/about_img1.JPG" alt="Denisse Roxanne H. Bolinas" style="width:100%;max-width:200px">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                      <div id="caption"></div>
+                    </div>
+
+                    <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("myImg");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
+                    </script>
+
+                    <div class="abouttitle1">
+                    <h2>PROFILE</h2>
+                    <h1><a href="https://www.facebook.com/Denbolinas01" target="_blank">DENISSE ROXANNE<br>H. BOLINAS</a></h1>
+                    </div>
+                    <div class="aboutinfo">
+                    <p> <b>BIRTHDAY:</b>  September 01, 2003<br>
+                        <b>BIRTHPLACE:</b>  Santa Cruz, Manila, NCR, Philippines<br>
+                        <b>NATIONALITY:</b>  Filipino<br>
+                        <b>ZODIAC SIGN:</b>  Virgo<br>
+                        <b>HEIGHT:</b>  170 cm<br>
+                        <b>WEIGHT:</b>  53 kg<br>
+                        <b>ADDRESS:</b>  Block 14 Lot 4 Mahogany St., Bulacan Meadows Subd., Cay Pombo, Santa Maria, Bulacan<br>  
+                    </p>
+                    </div>
+                </div>
+                <div class="aboutsec2">
+                    <h1>HOBBIES</h1>
+                    <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9"><br><br>
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <img src="./fpimgs/hb1.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <img src="./fpimgs/hb2.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <img src="./fpimgs/hb3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="./fpimgs/hb4.jpg" style="width:100%">
+                          </div>
+                          
+                          <div class="mySlides fade">
+                            <img src="./fpimgs/hb5.jpg" style="width:100%">
+                          </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                          <span class="dot" onclick="currentSlide(4)"></span> 
+                          <span class="dot" onclick="currentSlide(5)"></span> 
+                        </div>
+                        
+                        <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                        }
+                        </script>
+                    <br>
+                    <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9"><br><br><br>
+                </div>
+
+                <div class="aboutsec3">
+                        <div class="aboutme">
+                        <h1>ABOUT ME</h1>
+                        <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9"><br><br>
+                        </div>
+                        <div class="aboutmecont">
+                        <p> I am a first-year Bachelor of Science in Electronics Engineering student at Technological University of the Philippines. 
+                            I have always been fascinated by psychology and technology. With that, I aspire to pursue a career that can contribute to both 
+                            fields through research and development. I believe that time is our greatest asset. While growing up, I prioritize investing time 
+                            in activities that can help me build my character, such as joining a community and learning new skills to grow and make connections 
+                            through shared interests. At the same time, I also make room for my hobbies, namely playing sports, making playlists, and reading.
+                        </p>
+                        </div>
+                        <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9"><br><br>
+                    </div>
+
+                    <div class="aboutsec4">
+                        <div class="mantra">
+                        <h1>MANTRA</h1>
+                        <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9"><br><br>
+                        </div>
+                        <div class="mantracont">
+                        <h2>“My inner world creates my outer world.”</h2>
+                        </div>
+                        <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9"><br><br><br>
+                    </div>
+
+                    <div class="aboutsec5">
+                        <div class="dreamjob">
+                        <h1>DREAM JOB</h1>
+                        <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9"><br><br>
+                        </div>
+                        <div class="dreamjobcont">
+                        <p> My dream job involves specializing in developing instruments that will significantly help in the medical field. 
+                            I intend to pursue a career in biomedical engineering to aid in improving the healthcare system in the Philippines. 
+                            Since electronics engineering is diverse, I can also explore various fields which can help me maximize my skills to fulfill 
+                            my passion for serving others. To achieve financial freedom at a young age, I plan to trade and invest in stocks aside from 
+                            working as an engineer because it has always been my goal to give back to the community through funding research, charities, 
+                            and scholarship institutions. In addition, I would also like to recommence my career as a basketball player in the future.
+                        </p>
+                        </div>
+                        <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9"><br><br>
+                    </div>
+            </div><br>
+
+            <div class="mfooter"><br><br>
+                <hr style="height:1px;border-width:0;color:#d9d9d9;background-color:#d9d9d9">
+                <p>All Rights Reserved © 2022</p>
+              </div>
+
+          
+    </body>
+</html>
